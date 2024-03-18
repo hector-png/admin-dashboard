@@ -103,35 +103,31 @@
     background-color: #0ea5e9;
     grid-row: 1/4;
     display: grid;
-    grid-template-rows: 1fr repeat(2, 2fr);
-    gap: 25px;
+    grid-template-rows: 1fr 4fr 2fr 8fr;
+    gap: 26px;
 }
 
-.sidebar ul {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    list-style: none;
+.logo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;  
+    grid-column: 2/3;
+    align-self: center;
+}
+
+.sidebar-action {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: white;
+    grid-column: 2/3;
 }
 
 .sidebar-logo,
 .actions,
 .sub-actions {
-    grid-column: 2/3;
-}
-
-.sidebar-actions {
-    color: white;
-    font-size: 0.9rem;
-    font-weight: 500;
-    place-items: center;
-}
-
-.actions {
-    grid-row: 2/3;
-}
-
-.sub-actions {
-    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    list-style: none;
 }
 
 .content{
