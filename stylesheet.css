@@ -10,6 +10,11 @@
     grid-template-columns: 1fr 4fr;
 }
 
+img {
+    border-radius: 50%;
+    height: 40px;
+}
+
 .header {
     grid-column: 2/3;
     display: grid;
@@ -47,9 +52,13 @@ form > input {
 
 .header-meta-data {
     display: grid;
-    grid-template-columns: repeat(2, 1fr) 3fr;
-    justify-items: start;
-    align-self: center;
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    place-items: center;
+}
+
+.bell-icon {
+    margin-right: 15px;
+    justify-self: end;
 }
 
 .bell-icon svg{
@@ -57,6 +66,7 @@ form > input {
 }
 
 .username {
+    align-self: center;
     font-size: 1.1rem;
     font-weight: 600;
 }
@@ -71,10 +81,15 @@ form > input {
 .greeting-icon {
     align-self: center;
     justify-self: end;
-    margin-right: 25px;
+    margin-right: 15px;
+}
+
+.greeting-icon img {
+    height: 65px;
 }
 
 .greeting-text {
+    margin-top: 5px;
     line-height: 25px;
 }
 
@@ -142,7 +157,7 @@ form > input {
 
 .sidebar-icon > svg {
     fill: white;
-    height: 24px;
+    height: 22px;
 }
 
 .logo {
@@ -154,7 +169,7 @@ form > input {
 }
 
 .sidebar-action {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: white;
     grid-column: 2/3;
@@ -309,7 +324,7 @@ form > input {
     align-items: center;
 }
 
-.trending-item p {
+.trending-item img {
     justify-self: center;
 }
 
